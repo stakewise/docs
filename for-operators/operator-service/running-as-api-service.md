@@ -85,14 +85,16 @@ POST /validators
 {
   "vault": "0x1234...",
   "validators_start_index": int,
-  "validators_count": int,
+  "validators_batch_size": int,
   "validators_total": int
 }
 ```
 
-`validators_count` - number of validators in current batch. Maximum batch size is determined by prococol config, currently 10.
+`validators_start_index` - validator index for the first validator in the batch
 
-`validators_total` - total number of validators supplied by vault assets. `validators_total` should be more than or equal to `validators_count` . Relayer may use this value to allocate larger portions of validators in background.
+`validators_batch_size` - number of validators in current batch. Maximum batch size is determined by protocol config, currently 10.
+
+`validators_total` - hint for Relayer. Does not affect Relayer response. Relayer may use this value to allocate larger portions of validators in background. `validators_total` should be more than or equal to `validators_batch_size` .&#x20;
 
 #### Response format:
 
