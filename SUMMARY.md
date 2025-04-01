@@ -55,7 +55,7 @@
 * [Networks](for-developers/networks/README.md)
   * [Gnosis](for-developers/networks/gnosis.md)
   * [Mainnet](for-developers/networks/mainnet.md)
-  * [Holesky](for-developers/networks/holesky.md)
+  * [Hoodi](for-developers/networks/holesky.md)
   * [Chiado](for-developers/networks/chiado.md)
 
 ## Governance
