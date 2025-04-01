@@ -13,7 +13,6 @@
 | DepositDataRegistry           | [0x93a3f880E07B27dacA6Ef2d3C23E77DBd6294487](http://hoodi.etherscan.io/address/0x93a3f880E07B27dacA6Ef2d3C23E77DBd6294487) |
 | EthValidatorsChecker          | [0xB790391ee99b9193Ebb80022bf127d24Bac586c4](http://hoodi.etherscan.io/address/0xB790391ee99b9193Ebb80022bf127d24Bac586c4) |
 | EthGenesisVault               | [0xba447498DC4c169f2b4f427B2c4D532320457E89](http://hoodi.etherscan.io/address/0xba447498DC4c169f2b4f427B2c4D532320457E89) |
-| EthFoxVault                   | [0x468FD65EfA48650F660456a71DC5be32D27D0B46](http://hoodi.etherscan.io/address/0x468FD65EfA48650F660456a71DC5be32D27D0B46) |
 | EthVaultFactory               | [0x508e82B5119CCfB923C387d62D2Ae7B56Df79906](http://hoodi.etherscan.io/address/0x508e82B5119CCfB923C387d62D2Ae7B56Df79906) |
 | EthPrivVaultFactory           | [0x9115E176C3d034339036194c3EB7014Ef04A2e4b](http://hoodi.etherscan.io/address/0x9115E176C3d034339036194c3EB7014Ef04A2e4b) |
 | EthBlocklistVaultFactory      | [0xE2121568066C0a9d794bbB95D0Ade0ebd81cCaf9](http://hoodi.etherscan.io/address/0xE2121568066C0a9d794bbB95D0Ade0ebd81cCaf9) |
