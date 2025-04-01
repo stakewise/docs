@@ -29,7 +29,6 @@ Subgraph: [https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graph
 | OsTokenFlashLoans             | [0xCd5F3C1BA0342e1de907eEE09aeC52183ef5D99e](http://hoodi.etherscan.io/address/0xCd5F3C1BA0342e1de907eEE09aeC52183ef5D99e)  |
 | PriceFeed                     | [0xe8a222D887b468a71Ee8a27df4fa3b886A4B7BA1](http://hoodi.etherscan.io/address/0xe8a222D887b468a71Ee8a27df4fa3b886A4B7BA1)  |
 | RewardSplitterFactory         | [0x80353898B72417AC5701a9809A9eF63F691BdE86](http://hoodi.etherscan.io/address/0x80353898B72417AC5701a9809A9eF63F691BdE86)  |
-| CumulativeMerkleDrop          | [0xA3bdb3a57626900E4Dd9cC1C2c07bA60F4A44Fbc](http://hoodi.etherscan.io/address/0xA3bdb3a57626900E4Dd9cC1C2c07bA60F4A44Fbc)  |
 | EthFoxVault1                  | [0xFb534BB912Eb83b7b629329195b8DF798Ea325b2](http://hoodi.etherscan.io/address/0xFb534BB912Eb83b7b629329195b8DF798Ea325b2)  |
 | EthFoxVault2                  | [0x468FD65EfA48650F660456a71DC5be32D27D0B46](http://hoodi.etherscan.io/address/0x468FD65EfA48650F660456a71DC5be32D27D0B46)  |
 | SWISE                         | [0x3c5634a5437A394353F49fe04FE5db11961c5c2D](https://hoodi.etherscan.io/address/0x3c5634a5437A394353F49fe04FE5db11961c5c2D) |
