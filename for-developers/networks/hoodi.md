@@ -38,7 +38,7 @@ Subgraph: [https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graph
 | Contract Name           | Contract Address                                                                                                           |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | StrategiesRegistry      | [0x6A2911F94da08Da01158d645Bf85152b338E015D](http://hoodi.etherscan.io/address/0x6A2911F94da08Da01158d645Bf85152b338E015D) |
-| StakeHelpers            | [0xaE9A192Ed2030444Eb9323c592f1B85801EA0eC3](http://hoodi.etherscan.io/address/0xaE9A192Ed2030444Eb9323c592f1B85801EA0eC3) |
+| StakeHelpers            | [0xaE9A192Ed2030444eB9323C592F1b85801EA0Ec3](https://etherscan.io/address/0xaE9A192Ed2030444Eb9323c592f1B85801EA0eC3)      |
 | VaultUserLtvTracker     | [0xcF619F9Dd8eB483239de953251fd13cB0F977c6C](http://hoodi.etherscan.io/address/0xcF619F9Dd8eB483239de953251fd13cB0F977c6C) |
 | OsTokenVaultEscrowAuth  | [0x4A745DFf39BBEa970dA28dba2BA94dB81938aC39](http://hoodi.etherscan.io/address/0x4A745DFf39BBEa970dA28dba2BA94dB81938aC39) |
 | MerkleDistributor       | [0xc61847D6fc1F64162ff9f1D06205d9C4cDb2F239](http://hoodi.etherscan.io/address/0xc61847D6fc1F64162ff9f1D06205d9C4cDb2F239) |
