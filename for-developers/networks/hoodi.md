@@ -2,7 +2,9 @@
 
 **Stakewise App:** [https://app.stakewise.io/?networkId=hoodi](https://app.stakewise.io/?networkId=hoodi)
 
-Subgraph: [https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graphql](https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graphql)
+**Subgraph:** [https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graphql](https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graphql)
+
+**Validators & Scoring API**: [https://hoodi-api.stakewise.io/graphql](https://hoodi-api.stakewise.io/graphql)
 
 **Faucets:** [hoodi-faucet.pk910.de](https://hoodi-faucet.pk910.de/)
 
