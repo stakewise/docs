@@ -25,7 +25,6 @@
 * [osToken](protocol-overview-in-depth/ostoken.md)
 * [Fees](protocol-overview-in-depth/fees.md)
 * [Oracles](protocol-overview-in-depth/oracles.md)
-* [Vault incentives](protocol-overview-in-depth/vault-incentives.md)
 
 ## For operators
 
@@ -43,6 +42,7 @@
   * [Obol Setup](for-operators/dvt/obol-setup.md)
   * [SSV Setup](for-operators/dvt/ssv-setup.md)
   * [Running operator with DVT](for-operators/dvt/running-operator-with-dvt.md)
+* [Vault incentives](for-operators/vault-incentives.md)
 * [Vault performance](for-operators/vault-performance.md)
 
 ## For developers
