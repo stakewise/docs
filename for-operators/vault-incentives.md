@@ -24,7 +24,7 @@ The extra incentives will be added to both the base APY and the boost APY of the
 
 If your address is approved by the DAO as a distributor, you will be able to allocate periodic incentives to your vault by following these steps:
 
-* Call `approve` on the token you would like to distribute. Set the `spender` to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract.
+* Call `approve` on the token you would like to distribute. Set the `spender` to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract address.
 * Go to the contract.
 * Click **Contract** → **Write Contract**.
 * Click **Connect to Web3** and connect with the address that the DAO has approved as a distributor.
@@ -43,6 +43,7 @@ Incentives will be allocated to all vault users based on their staked balance at
 
 If your address is approved by the DAO as a distributor, you will be able to allocate one-time incentives to your vault by following these steps:
 
+* Call `approve` on the token you would like to distribute. Set the `spender` to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract address.
 * Go to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract.
 * Click **Contract** → **Write Contract**.
 * Click **Connect to Web3** and connect with the address that the DAO has approved as a distributor.
@@ -74,10 +75,11 @@ To proceed with an IPFS-based distribution:
 ```
 
 1. Upload file to IPFS and obtain hash for it. For example, `bafkreig3c7venh7xlbqap2r5idlva73gooflgadilxnmav24bnyvltvouq`
-2. Go to [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract.
-3. Click **Contract** → **Write Contract**.
-4. **Connect to Web3** with your approved distributor address.
-5. Use the d**istributeOneTime** function and input:
+2. Call `approve` on the token you would like to distribute. Set the `spender` to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract address.
+3. Go to [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract.
+4. Click **Contract** → **Write Contract**.
+5. **Connect to Web3** with your approved distributor address.
+6. Use the d**istributeOneTime** function and input:
    1. `token` - token address. Currently, only SWISE, osETH, SSV, WETH, and USDC are supported.
    2. `amount`- amount in Wei. **Note**: You must approve the transfer of the specified amount to the Merkle Distributor contract address.
    3. `rewardsIpfsHash` - the hash of the file uploaded to IPFS
