@@ -24,7 +24,8 @@ The extra incentives will be added to both the base APY and the boost APY of the
 
 If your address is approved by the DAO as a distributor, you will be able to allocate periodic incentives to your vault by following these steps:
 
-* Go to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract.
+* Call `approve` on the token you would like to distribute. Set the `spender` to the [Merkle Distributor](https://etherscan.io/address/0xa9dc250df4ee9273d09cfa455da41fb1cac78d34) contract.
+* Go to the contract.
 * Click **Contract** → **Write Contract**.
 * Click **Connect to Web3** and connect with the address that the DAO has approved as a distributor.
 * Click d**istributePeriodically** and enter the following:
