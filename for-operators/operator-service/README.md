@@ -40,19 +40,38 @@ Ensure your execution node is fully synced and running. Any execution client tha
 
 {% tabs %}
 {% tab title="Reth" %}
+The problem with Reth could be event logs pruning. Operator reads event logs from certain contracts. In order to preserve those logs execution client needs to be tweaked.&#x20;
+
 The required setting in the `reth.toml` is:
 
 ```
-[prune.segments.receipts_log_filter.0x6B5815467da09DaA7DC83Db21c9239d98Bb487b5]
-before = 18470089
+[prune.segments.receipts_log_filter.0x6b5815467da09daa7dc83db21c9239d98bb487b5]
+before = 21471500
 ```
+
+Here `0x6b5815467da09daa7dc83db21c9239d98bb487b5` is Keeper contract address on Ethereum Mainnet. Note that the address must be lowercased.
+
+For other networks you have to adjust Keeper address and block number. You can find Keeper address on [Networks](../../for-developers/networks/) page. You can look up the Keeper contract's block number in a block explorer, e.g., Etherscan. Use the contract creation block number.&#x20;
+
+Alternatively if you want to save more disk space you can use the block when protocol config was updated. Actual values are defined in [network config](https://github.com/stakewise/v3-operator/blob/master/src/config/networks.py) in Operator sources. See `CONFIG_UPDATE_EVENT_BLOCK` field for selected network.
 {% endtab %}
 
 {% tab title="Erigon" %}
-The required flags for Erigon:\
-`erigon --prune=receipts --prune.to=18470089`
+The problem with Erigon could be event logs pruning. Operator reads event logs from certain contracts. In order to preserve those logs execution client needs to be tweaked. &#x20;
+
+The required flags for Erigon on Ethereum Mainnet:
+
+```
+erigon --prune=receipts --prune.to=21471500
+```
+
+For other networks you have to adjust the block number. You can look up the Keeper contract's block number in a block explorer, e.g., Etherscan. Use the contract creation block number.
+
+Alternatively if you want to save more disk space you can use the block when protocol config was updated. Actual values are defined in [network config](https://github.com/stakewise/v3-operator/blob/master/src/config/networks.py) in Operator sources. See `CONFIG_UPDATE_EVENT_BLOCK` field for selected network.
 {% endtab %}
 {% endtabs %}
+
+
 
 #### Consensus client
 
