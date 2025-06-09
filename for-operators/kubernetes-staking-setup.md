@@ -310,8 +310,8 @@ After the database is deployed, two databases and two users must be created:
 Complete the following steps before proceeding:
 
 1. [Install Operator Service](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
-2. [Prepare Operator Service](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
-3. [Update deposit data file to the Vault](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
+2. [Prepare Operator Service](https://docs.stakewise.io/for-operators/operator-service#prepare-operator-service)
+3. [Upload deposit data file to the Vault](https://docs.stakewise.io/for-operators/operator-service#upload-deposit-data-file-to-vault)
 
 #### Setup database
 

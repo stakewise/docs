@@ -92,7 +92,7 @@ Stakers in Vaults benefit from these slashing protection mechanisms because when
 
 Stakers who buy osETH on DEXs don't have exposure to any particular Vault and hence are fully insulated against any slashing losses and poor performance that may occur.&#x20;
 
-[<mark style="color:blue;">Read more about the excess backing of osETH -></mark>](ostoken.md#overcollateralization)
+[<mark style="color:blue;">Read more about the excess backing of osETH -></mark>](ostoken.md#backing)
 {% endtab %}
 
 {% tab title="osGNO" %}
@@ -113,6 +113,8 @@ Stakers in Vaults benefit from these slashing protection mechanisms because when
 **Buying osGNO on DEXs**
 
 Stakers who buy osGNO on DEXs don't have exposure to any particular Vault and hence are fully insulated against any slashing losses and poor performance that may occur.&#x20;
+
+[<mark style="color:blue;">Read more about the excess backing of osGNO -></mark>](ostoken.md#backing)
 {% endtab %}
 {% endtabs %}
 

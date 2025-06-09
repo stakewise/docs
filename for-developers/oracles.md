@@ -23,7 +23,7 @@ layout:
 
 <figure><img src="../.gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>Oracles updating rewards</p></figcaption></figure>
 
-Currently, there is no way to fetch the Beacon Chain state in the EVM. It is planned to make it available in [EIP-4788](https://eips.ethereum.org/EIPS/eip-4788). Until then, StakeWise uses Oracles to fetch rewards from the Beacon Chain and submit the updates to the contracts. The Oracles are listed [here](../protocol-overview-in-depth/oracles.md). The Oracles are selected and [approved](https://vote.stakewise.io/#/proposal/0x54ceedefd1060fbad17ab6181be5a90da4c686dc071d1f6121d24c0398700be6) by the StakeWise DAO. The Oracles run the [v3-oracle](https://github.com/stakewise/v3-oracle) nodes and have the following responsibilities:
+Currently, there is no way to fetch the Beacon Chain state in the EVM. It is planned to make it available in [EIP-4788](https://eips.ethereum.org/EIPS/eip-4788). Until then, StakeWise uses Oracles to fetch rewards from the Beacon Chain and submit the updates to the contracts. The Oracles are listed [here](../protocol-overview-in-depth/oracles.md). The Oracles are selected and [approved](https://vote.stakewise.io/#/proposal/0x54ceedefd1060fbad17ab6181be5a90da4c686dc071d1f6121d24c0398700be6) by the StakeWise DAO. The Oracles run the [oracle](https://github.com/stakewise/oracle) nodes and have the following responsibilities:
 
 ### Rewards update
 
@@ -37,7 +37,7 @@ The voting process consists of the following steps:
 4. Calculate the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) based on consensus/execution rewards from the previous steps and upload it to IPFS. For example, [bafkreibqhdr6p5uh67ickt4dpppb525bwuofjocnpsx4dbl57llogfph2e](https://stakewise.infura-ipfs.io/ipfs/bafkreibqhdr6p5uh67ickt4dpppb525bwuofjocnpsx4dbl57llogfph2e).
 5. Save the vote to the database and make it available through public API.
 
-Anyone who runs [v3-keeper](https://github.com/stakewise/v3-keeper/) will fetch votes from Oracles endpoints, concatenate them and send them to the [Keeper contract](https://v3-docs.stakewise.io/deployments). Currently, 6 out of 11 votes are required to submit an update. Once the update has submitted, Vaults can pull the updates through the `updateState` call.
+Anyone who runs [v3-keeper](https://github.com/stakewise/v3-keeper/) will fetch votes from Oracles endpoints, concatenate them and send them to the [Keeper contract](https://docs.stakewise.io/for-developers/networks). Currently, 6 out of 11 votes are required to submit an update. Once the update has submitted, Vaults can pull the updates through the `updateState` call.
 
 ### Validator(s) registration
 
@@ -74,7 +74,7 @@ if (await keeperContract.canHarvest(vaultContract.address)) {
 ```
 
 {% hint style="info" %}
-The **harvestParams** can be fetched from the [StakeWise subgraph](https://graphs.stakewise.io/mainnet/subgraphs/name/stakewise/prod/graphql?query=%7B%0A++vaults%28where%3A+%7Bid%3A+%220xac0f906e433d58fa868f936e8a43230473652885%22%7D%29+%7B%0A++++rewardsRoot%0A++++proofReward%0A++++proofUnlockedMevReward%0A++++proof%0A++%7D%0A%7D) or by fetching the last [RewardsUpdated](https://github.com/stakewise/v3-core/blob/main/contracts/interfaces/IKeeperRewards.sol#L22) event from the [Keeper contract](https://v3-docs.stakewise.io/deployments), extracting the `rewardsIpfsHash`, fetching the file, and getting the parameters for your Vault from it.
+The **harvestParams** can be fetched from the [StakeWise subgraph](https://graphs.stakewise.io/mainnet/subgraphs/name/stakewise/prod/graphql?query=%7B%0A++vaults%28where%3A+%7Bid%3A+%220xac0f906e433d58fa868f936e8a43230473652885%22%7D%29+%7B%0A++++rewardsRoot%0A++++proofReward%0A++++proofUnlockedMevReward%0A++++proof%0A++%7D%0A%7D) or by fetching the last [RewardsUpdated](https://github.com/stakewise/v3-core/blob/main/contracts/interfaces/IKeeperRewards.sol#L22) event from the [Keeper contract](https://docs.stakewise.io/for-developers/networks), extracting the `rewardsIpfsHash`, fetching the file, and getting the parameters for your Vault from it.
 {% endhint %}
 
 2. By the Vault operator by passing `--harvest-vault` to the `start` command in [v3-operator](https://github.com/stakewise/v3-operator).

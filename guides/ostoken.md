@@ -178,7 +178,7 @@ Note that osGNO not acquired by minting from a Vault does not require any mainte
 {% tab title="osETH" %}
 All your minted osETH must be burned before you can fully unstake ETH from a Vault.
 
-[<mark style="color:blue;">Learn more about burning osETH -></mark>](../protocol-overview-in-depth/ostoken.md#burning-oseth)
+[<mark style="color:blue;">Learn more about burning osETH -></mark>](../protocol-overview-in-depth/ostoken.md#burning)
 
 The StakeWise DAO staking fee is included in the balance of osETH that must be burned before you can unstake.&#x20;
 
@@ -196,7 +196,7 @@ The StakeWise DAO staking fee is included in the balance of osETH that must be b
 {% tab title="osGNO" %}
 All your minted osGNO must be burned before you can fully unstake GNO from a Vault.
 
-[<mark style="color:blue;">Learn more about burning osGNO -></mark>](../protocol-overview-in-depth/ostoken.md#burning-oseth)
+[<mark style="color:blue;">Learn more about burning osGNO -></mark>](../protocol-overview-in-depth/ostoken.md#burning)
 
 The StakeWise DAO staking fee is included in the balance of osGNO that must be burned before you can unstake.&#x20;
 

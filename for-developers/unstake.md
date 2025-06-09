@@ -65,7 +65,7 @@ Claims assets that were withdrawn by the Vault. It can be called only after the 
 
 * [Interface](https://github.com/stakewise/v3-core/blob/b93337b7f48f3d94bd76e6facadd0635326237de/contracts/interfaces/IVaultEnterExit.sol)
 * [Implementation](https://github.com/stakewise/v3-core/blob/b93337b7f48f3d94bd76e6facadd0635326237de/contracts/vaults/modules/VaultEnterExit.sol)
-* [Exit queue internal library](https://github.com/stakewise/v3-core/blob/b93337b7f48f3d94bd76e6facadd0635326237de/contracts/vaults/modules/VaultEnterExit.sol)
+* [Exit queue internal library](https://github.com/stakewise/v3-core/blob/b93337b7f48f3d94bd76e6facadd0635326237de/contracts/libraries/ExitQueue.sol)
 
 ## Vaults exit requests <a href="#vaults-exit-requests" id="vaults-exit-requests"></a>
 

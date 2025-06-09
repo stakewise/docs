@@ -7,8 +7,8 @@ You may not want the operator service to have direct access to the validator key
 Complete the following steps before proceeding:
 
 1. [Install Operator Service](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
-2. [Prepare Operator Service](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
-3. [Update deposit data file to the Vault](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
+2. [Prepare Operator Service](https://docs.stakewise.io/for-operators/operator-service#prepare-operator-service)
+3. [Upload deposit data file to the Vault](https://docs.stakewise.io/for-operators/operator-service#upload-deposit-data-file-to-vault)
 
 ### Remote signer setup (optional)
 

@@ -96,7 +96,7 @@ Pay close attention to the publicKey field, as the name says, it contains the pu
 
 #### Step 3.1. Run SSV Node
 
-{% embed url="https://docs.ssv.network/operator-user-guides/operator-node" %}
+{% embed url="https://docs.ssv.network/operators/operator-node/" %}
 
 **Create Configuration File**
 
@@ -210,12 +210,12 @@ p2p:
 
 **Offline Key Splitting**
 
-Offline key splitting is the most secure option, although less convenient, as it requires running a command line tool. For more information, refer to the specific [User Guide on how to use the ssv-keys CLI tool](https://docs.ssv.network/validator-user-guides/tools/ssv-keys-cli).
+Offline key splitting is the most secure option, although less convenient, as it requires running a command line tool. For more information, refer to the specific [User Guide on how to use the ssv-keys CLI tool](https://docs.ssv.network/stakers/tools/ssv-keys-cli).
 
 _**Before continue download**_ [_**ssv-keys**_](https://github.com/bloxapp/ssv-keys/releases)
 
 {% hint style="info" %}
-The latest SSV Smart Contract updates added support for [_bulk operations_](https://docs.ssv.network/developers/smart-contracts/ssvnetwork#bulkregistervalidator-publickey-operatorids-shares-amount-cluster), and the latest release of`ssv-keys` has been made compatible with bulk operations. With version 1.1.0 (and above), it is possible to generate keyshares for multiple keystores in a single operation.
+The latest SSV Smart Contract updates added support for [_bulk operations_](https://docs.ssv.network/developers/smart-contracts/ssvnetwork/#bulkregistervalidatorpublickey-operatorids-shares-amount-cluster), and the latest release of`ssv-keys` has been made compatible with bulk operations. With version 1.1.0 (and above), it is possible to generate keyshares for multiple keystores in a single operation.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-04-08 at 10.40.18.png" alt=""><figcaption><p>Select your validator cluster and press Add validator button</p></figcaption></figure>
@@ -259,7 +259,7 @@ You can select the operational runway period of your validator, in accordance wi
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-04-08 at 10.59.56.png" alt=""><figcaption></figcaption></figure>
 
-**Please read carefully and understand how fees are managed and the risks of account** [**liquidation**](https://ssv.network/glossary/#liquidation) **if your account balance falls below the** [**Threshold Balance**](https://ssv.network/glossary/##threshold-balance)**.**
+**Please read carefully and understand how fees are managed and the risks of account** [**liquidation**](https://ssv.network/glossary/#liquidation) **if your account balance falls below the** [**Threshold Balance**](https://docs.ssv.network/learn/glossary/#liquidation-collateral)**.**
 
 The following screen alerts you of the potential dangers of registering a validator on the SSV network, if the same set of validator keys is also being used by other consensus and validator clients.
 
@@ -281,6 +281,6 @@ By clicking on Register validator(s), you'll be proposed to sign transactions to
 
 For more info check SSV docs:
 
-{% embed url="https://docs.ssv.network/validator-user-guides/validator-management/distributing-a-validator" %}
+{% embed url="https://docs.ssv.network/stakers/validator-management/distributing-a-validator/" %}
 
 ### Step 3. Deposit to Vault ;)
