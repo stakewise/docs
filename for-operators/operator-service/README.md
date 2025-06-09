@@ -28,7 +28,7 @@ All node operators of StakeWise V3 must run Operator Service in order to success
 
 #### Execution client
 
-Ensure your execution node is fully synced and running. Any execution client that supports [ETH Execution API specification](https://ethereum.github.io/execution-apis/api-documentation/) can be used:
+Ensure your execution node is fully synced and running. Any execution client that supports [ETH Execution API specification](https://ethereum.github.io/execution-apis/category/reference/) can be used:
 
 * [Nethermind](https://launchpad.ethereum.org/en/nethermind) (Ethereum, Gnosis)
 * [Besu](https://launchpad.ethereum.org/en/besu) (Ethereum)
@@ -229,7 +229,7 @@ Successfully initialized configuration for vault 0x3320a...68
 
 </details>
 
-**Step 2. Create validator keys**
+#### **Step 2. Create validator keys**
 
 Next, run the `create-keys` command to kickstart the deposit data and validator keystores creation process, making sure you have your newly created mnemonic to hand:
 
@@ -256,7 +256,7 @@ Deposit data saved to /home/user/.stakewise/0x3320a...68/keystores/deposit_data.
 
 </details>
 
-You may not want the operator service to have direct access to the validator keys. Validator keystores do not need to be present directly in the operator. You can check the [remote signer](https://docs.stakewise.io/for-operators/v3-operator-with-remote-signer) or [Hashicorp Vault](https://docs.stakewise.io/for-operators/v3-operator-with-hashi-vault) guides on how to run Operator Service with them.
+You may not want the operator service to have direct access to the validator keys. Validator keystores do not need to be present directly in the operator. You can check the [remote signer](https://docs.stakewise.io/for-operators/operator-service/running-with-remote-signer) or [Hashicorp Vault](https://docs.stakewise.io/for-operators/operator-service/running-with-hashi-vault) guides on how to run Operator Service with them.
 
 {% hint style="info" %}
 Remember to upload the newly generated validator keys to the validator(s). For that, please follow a guide for your consensus client. The password for your keystores is located in the `password.txt` file in the keystores folder.
@@ -288,7 +288,7 @@ Note, you must send some ETH (or xDAI for Gnosis) to the wallet for gas expenses
 
 ### Upload deposit data file to Vault
 
-Once you have created your validator keys, deposit data file, and hot wallet, you need to upload the deposit data file to the Vault. This process connects your node to the Vault. Note, if there is more than one node operator in a Vault, you first need to merge all operator deposit data files into a single file (use the merge-deposit-data command). Uploading the deposit data file can be achieved either through the StakeWise UI or via Operator Service and can only be done by the [Vault Admin or Keys Manager](https://docs-v3.stakewise.io/protocol-overview-in-depth/vaults#governance-and-management).
+Once you have created your validator keys, deposit data file, and hot wallet, you need to upload the deposit data file to the Vault. This process connects your node to the Vault. Note, if there is more than one node operator in a Vault, you first need to merge all operator deposit data files into a single file (use the merge-deposit-data command). Uploading the deposit data file can be achieved either through the StakeWise UI or via Operator Service and can only be done by the [Vault Admin or Keys Manager](https://docs.stakewise.io/protocol-overview-in-depth/vaults#governance-and-management).
 
 {% tabs %}
 {% tab title="StakeWise UI" %}
@@ -393,7 +393,7 @@ Operator Service has many different commands that are not mandatory but might co
 
 #### Add validator keys to Vault
 
-You can always add more validator keys to your Vault. For that, you need to generate new validator keys and deposit data as described in [Step 2. Create validator keys](broken-reference/) and upload the deposit data file to your Vault as described in [Step 3. Upload deposit data file to Vault](broken-reference/). Note, uploading a new deposit data file will overwrite the existing file and consequently overwrite previously un-used validator keys. It can be done at any point, but only by the Vault Admin or Keys Manager.
+You can always add more validator keys to your Vault. For that, you need to generate new validator keys and deposit data as described in [Step 2. Create validator keys](https://docs.stakewise.io/for-operators/operator-service#step-2.-create-validator-keys) and upload the deposit data file to your Vault as described in [Step 3. Upload deposit data file to Vault](https://docs.stakewise.io/for-operators/operator-service#upload-deposit-data-file-to-vault). Note, uploading a new deposit data file will overwrite the existing file and consequently overwrite previously un-used validator keys. It can be done at any point, but only by the Vault Admin or Keys Manager.
 
 #### Validators voluntary exit
 

@@ -6,7 +6,7 @@ Download the latest operator binary from [here](https://github.com/stakewise/v3-
 
 ### Step 1. Validator keys recovery
 
-Follow the steps to recover the keystores using your validator keys mnemonic [here](https://github.com/stakewise/v3-operator#recover-vault-data-directory-and-keystores).
+Follow the steps to recover the keystores using your validator keys mnemonic [here](https://github.com/stakewise/v3-operator?tab=readme-ov-file#recover-validator-keystores).
 
 After recovery add fake `deposit_data.json` file to your operator's vault directory, with content:
 
@@ -66,7 +66,7 @@ helm upgrade --install web3signer stakewise/web3signer \
 
 ### Step 4. Create wallet and Kubernetes secret
 
-Сreate operator hot wallet by following the instructions [here](https://github.com/stakewise/v3-operator#3-create-wallet).
+Сreate operator hot wallet by following the instructions [here](https://github.com/stakewise/v3-operator?tab=readme-ov-file#step-3-create-hot-wallet).
 
 Before deploying v3-operator service create kubernetes secret with operator wallet:
 

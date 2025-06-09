@@ -7,8 +7,8 @@ Operator supports loading signing keys from remote [Hashi Vault](https://github.
 Complete the following steps before proceeding:
 
 1. [Install Operator Service](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
-2. [Prepare Operator Service](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
-3. [Update deposit data file to the Vault](https://docs.stakewise.io/for-operators/operator-service#install-operator-service)
+2. [Prepare Operator Service](https://docs.stakewise.io/for-operators/operator-service#prepare-operator-service)
+3. [Upload deposit data file to the Vault](https://docs.stakewise.io/for-operators/operator-service#upload-deposit-data-file-to-vault)
 
 Currently there are two commands that support loading signing keys: `start` and `validators-exit`, user must provide hashi vault instance URL, authentication token, and secret path in K/V engine. Internal structure of the secret must resemble following json:
 

@@ -29,7 +29,7 @@ Generate validator keys with a group using DKG ceremony. See [Obol DKG guide](ht
 {% endtab %}
 
 {% tab title="SSV" %}
-Generate validator keys with a group using DKG ceremony. See [SSV DKG guide](https://docs.ssv.network/validator-user-guides/validator-management/distributing-a-validator-1).
+Generate validator keys with a group using DKG ceremony. See [SSV DKG guide](https://docs.ssv.network/stakers/validator-management/distributing-a-validator/).
 {% endtab %}
 {% endtabs %}
 
@@ -46,7 +46,7 @@ Each DVT operator should run Charon instance. Charon is HTTP middleware built by
 {% endtab %}
 
 {% tab title="SSV" %}
-SSV node works as DVT replacement for validator client. Each SSV operator participating in a cluster should run his own node. See [the guide for SSV operators](https://docs.ssv.network/operator-user-guides/operator-node).
+SSV node works as DVT replacement for validator client. Each SSV operator participating in a cluster should run his own node. See [the guide for SSV operators](https://docs.ssv.network/operators/operator-node/).
 {% endtab %}
 {% endtabs %}
 
@@ -208,7 +208,7 @@ DKG ceremony produces deposit data file in addition to keystores. See [instructi
 
 #### Step 4.4 Run Stakewise Operator
 
-See [instructions](https://docs.stakewise.io/for-operators/operator-service#upload-deposit-data-file-to-vault).
+See [instructions](https://docs.stakewise.io/for-operators/operator-service#run-operator-service).
 
 There are some changes for DVT case:
 
