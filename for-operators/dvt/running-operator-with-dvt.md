@@ -25,11 +25,11 @@ DKG is more secure and decentralized way because nobody has full control over va
 
 {% tabs %}
 {% tab title="Obol" %}
-Generate validator keys with a group using DKG ceremony. See [Obol DKG guide](https://docs.obol.org/docs/start/quickstart\_group).
+Generate validator keys with a group using DKG ceremony. See [Obol DKG guide](https://docs.obol.org/docs/start/quickstart_group).
 {% endtab %}
 
 {% tab title="SSV" %}
-Generate validator keys with a group using DKG ceremony. See [SSV DKG guide](https://docs.ssv.network/validator-user-guides/validator-management/distributing-a-validator-1).
+Generate validator keys with a group using DKG ceremony. See [SSV DKG guide](https://docs.ssv.network/developers/tools/ssv-dkg-client/).
 {% endtab %}
 {% endtabs %}
 
@@ -46,7 +46,7 @@ Each DVT operator should run Charon instance. Charon is HTTP middleware built by
 {% endtab %}
 
 {% tab title="SSV" %}
-SSV node works as DVT replacement for validator client. Each SSV operator participating in a cluster should run his own node. See [the guide for SSV operators](https://docs.ssv.network/operator-user-guides/operator-node).
+SSV node works as DVT replacement for validator client. Each SSV operator participating in a cluster should run his own node. See [the guide for SSV operators](https://docs.ssv.network/operators/operator-node/).
 {% endtab %}
 {% endtabs %}
 
