@@ -21,6 +21,8 @@ Where:
 * `proposed_block_count` - Number of successfully mined MEV blocks.
 * `missed_block_count` - Number of missed MEV blocks.
 
+The proposer score is determined from statistics collected over the past 7 days.
+
 ### Attester performance
 
 #### **Attestation Rewards**
@@ -47,6 +49,8 @@ Where:
 
 * `total_rewards` - Sum of validators rewards fetched via [beacon API](https://ethereum.github.io/beacon-APIs/#/Rewards/getAttestationsRewards)
 * `ideal_rewards` - Sum of ideal rewards fetched via [beacon API](https://ethereum.github.io/beacon-APIs/#/Rewards/getAttestationsRewards)
+
+The attester score is determined from statistics collected over the past 7 days.
 
 #### **Sync Committee**
 
