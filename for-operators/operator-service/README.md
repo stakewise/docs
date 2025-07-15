@@ -4,20 +4,6 @@ description: >-
   StakeWise V3.
 cover: ../../.gitbook/assets/Frame 27513376 (1).png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Operator Service
@@ -82,6 +68,10 @@ Ensure your consensus node is fully synced and running. Any consensus client tha
 * [Prysm](https://launchpad.ethereum.org/en/prysm) (Ethereum)
 * [Teku](https://launchpad.ethereum.org/en/teku) (Ethereum, Gnosis)
 * [Lodestar](https://launchpad.ethereum.org/en/lodestar) (Ethereum, Gnosis)
+
+{% hint style="warning" %}
+Verify that your validator clients are configured with the correct fee recipient address. You can locate the validator fee recipient address on the Vault page in the Details section.
+{% endhint %}
 
 #### Vault
 

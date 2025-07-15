@@ -23,6 +23,10 @@ Where:
 
 The proposer score is determined from statistics collected over the past 7 days.
 
+{% hint style="warning" %}
+A block is considered missing if the transaction fee or MEV is sent to the incorrect address, which negatively impacts the Vault performance score. Verify that your validator clients are configured with the correct fee recipient address. You can locate the validator fee recipient address on the Vault page in the Details section.
+{% endhint %}
+
 ### Attester performance
 
 #### **Attestation Rewards**
