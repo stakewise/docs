@@ -1,20 +1,6 @@
 ---
 cover: ../.gitbook/assets/Frame 27513376 (1).png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Oracles
@@ -60,7 +46,7 @@ The Vault state can be updated in one of the following ways:
 1. By the user during interaction with the Vault. This can be done by wrapping the call (e.g., redeem, osETH mint, etc.) with a `multicall` and adding a state update. For example,
 
 ```typescript
-const balance = await vaultContract.balanceOf(staker.address)
+const balance = await vaultContract.getShares(staker.address)
 let tx
 if (await keeperContract.canHarvest(vaultContract.address)) {
   const calls = [
