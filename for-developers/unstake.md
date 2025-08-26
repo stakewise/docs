@@ -71,10 +71,10 @@ Claims assets that were withdrawn by the Vault. It can be called only after the 
 
 You can fetch current vault exit requests from the Stakewise Graph service.
 
-* [Mainnet](https://mainnet-graph.stakewise.io/subgraphs/name/stakewise/stakewise/graphql)
-* [Hoodi](https://hoodi-graph.stakewise.io/subgraphs/name/stakewise/stakewise/graphql)
-* [Gnosis](https://gnosis-graph.stakewise.io/subgraphs/name/stakewise/stakewise/graphql)
-* [Chiado](https://chiado-graph.stakewise.io/subgraphs/name/stakewise/stakewise/graphql)
+* [Mainnet](https://graphs.stakewise.io/mainnet/subgraphs/name/stakewise/prod/graphql)
+* [Hoodi](https://graphs.stakewise.io/hoodi/subgraphs/name/stakewise/prod/graphql)
+* [Gnosis](https://graphs.stakewise.io/gnosis/subgraphs/name/stakewise/prod/graphql)
+* [Chiado](https://graphs.stakewise.io/chiado/subgraphs/name/stakewise/prod/graphql)
 
 #### GraphQL request example <a href="#graphql-request-example" id="graphql-request-example"></a>
 
