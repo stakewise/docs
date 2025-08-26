@@ -199,7 +199,7 @@ Run the `init` command and follow the steps to set up your mnemonic used to deri
 <summary>Example output</summary>
 
 ```
-Enter the network name (mainnet, holesky) [mainnet]:
+Enter the network name (mainnet, hoodi) [mainnet]:
 Enter your vault address: 0x3320a...68
 Choose your mnemonic language (chinese_simplified, chinese_traditional, czech, english, italian, korean, portuguese, spanish) [english]:
 This is your seed phrase. Write it down and store it safely, it is the ONLY way to recover your validator keys.
