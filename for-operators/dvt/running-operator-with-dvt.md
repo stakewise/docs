@@ -80,7 +80,7 @@ Put these files into `ssv-data` directory which will be mapped as docker volume.
 <summary>Env example for Obol</summary>
 
 ```ini
-# Network choices: mainnet,hoodi,gnosis,chiado
+# Network choices: mainnet,hoodi
 NETWORK=mainnet
 
 # LOG_LEVEL=INFO
@@ -126,7 +126,7 @@ OBOL_NODE_INDEX=0
 <summary>Env example for SSV</summary>
 
 ```ini
-# Network choices: mainnet,hoodi,gnosis,chiado
+# Network choices: mainnet,hoodi
 NETWORK=mainnet
 
 # LOG_LEVEL=INFO
