@@ -125,7 +125,7 @@ ssv:
   # The SSV network to join to
   # Mainnet = Network: mainnet (default)
   # Testnet (Goerli)  = Network: jato-v2
-  # Testnet (Holesky) = Network: holesky
+  # Testnet (Hoodi) = Network: hoodi
   Network: mainnet
   
   ValidatorOptions:

@@ -24,7 +24,7 @@ CONSENSUS_ENDPOINTS=https://lighthouse
 DATA_DIR=/data
 DATABASE_DIR=/database
 EXECUTION_ENDPOINTS=https://nethermind
-NETWORK=holesky
+NETWORK=hoodi
 VAULT=0x3cc...
 RELAYER_ENDPOINT=https://relayer
 ```
