@@ -10,6 +10,10 @@ coverY: 0
 
 All node operators of StakeWise V3 must run Operator Service in order to successfully register validators on the platform. The below 4-step guide walks you through the initial setup of Stakewise Operator Service.
 
+{% hint style="warning" %}
+You must run Operator Service v3.1.10 if your Vault version is below 5 on Ethereum or below 3 on Gnosis. You can check your Vault contract version in the _Details_ section of the Vault page or on the contract page in the block explorer. If your Vault version is higher, please refer to the [latest documentation](https://docs-git-main-stakewise.vercel.app/operator/intro).
+{% endhint %}
+
 ### Prerequisites
 
 #### Execution client
