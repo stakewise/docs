@@ -26,7 +26,7 @@ Ensure your execution node is fully synced and running. Any execution client tha
 
 {% tabs %}
 {% tab title="Reth" %}
-The problem with Reth could be event logs pruning. Operator reads event logs from certain contracts. In order to preserve those logs execution client needs to be tweaked.&#x20;
+The problem with Reth could be event logs pruning. Operator reads event logs from certain contracts. In order to preserve those logs execution client needs to be tweaked.
 
 The required setting in the `reth.toml` is:
 
@@ -37,13 +37,13 @@ before = 21471500
 
 Here `0x6b5815467da09daa7dc83db21c9239d98bb487b5` is Keeper contract address on Ethereum Mainnet. Note that the address must be lowercased.
 
-For other networks you have to adjust Keeper address and block number. You can find Keeper address on [Networks](../../for-developers/networks/) page. You can look up the Keeper contract's block number in a block explorer, e.g., Etherscan. Use the contract creation block number.&#x20;
+For other networks you have to adjust Keeper address and block number. You can find Keeper address on [Networks](../../for-developers/networks/) page. You can look up the Keeper contract's block number in a block explorer, e.g., Etherscan. Use the contract creation block number.
 
 Alternatively if you want to save more disk space you can use the block when protocol config was updated. Actual values are defined in [network config](https://github.com/stakewise/v3-operator/blob/master/src/config/networks.py) in Operator sources. See `CONFIG_UPDATE_EVENT_BLOCK` field for selected network.
 {% endtab %}
 
 {% tab title="Erigon" %}
-The problem with Erigon could be event logs pruning. Operator reads event logs from certain contracts. In order to preserve those logs execution client needs to be tweaked. &#x20;
+The problem with Erigon could be event logs pruning. Operator reads event logs from certain contracts. In order to preserve those logs execution client needs to be tweaked.
 
 The required flags for Erigon on Ethereum Mainnet:
 
@@ -56,8 +56,6 @@ For other networks you have to adjust the block number. You can look up the Keep
 Alternatively if you want to save more disk space you can use the block when protocol config was updated. Actual values are defined in [network config](https://github.com/stakewise/v3-operator/blob/master/src/config/networks.py) in Operator sources. See `CONFIG_UPDATE_EVENT_BLOCK` field for selected network.
 {% endtab %}
 {% endtabs %}
-
-
 
 #### Consensus client
 
@@ -92,7 +90,7 @@ Operator Service can be run via a binary, docker image, deployed on a Kubernetes
 
 {% tabs %}
 {% tab title="Binary" %}
-Head to the [releases page](https://github.com/stakewise/v3-operator/releases) to find the latest version of Operator Service. Identify the binary file specific to your node hardware, download and decompress it.
+Head to the [releases page](https://github.com/stakewise/v3-operator/releases/tag/v3.1.10) to find the v3 version of Operator Service. Identify the binary file specific to your node hardware, download and decompress it.
 
 You will execute Operator Service commands from within the `v3-operator` folder using the below format (note that the use of flags is optional):
 
@@ -105,7 +103,7 @@ You will execute Operator Service commands from within the `v3-operator` folder 
 To install a binary for the latest release, run:
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/stakewise/v3-operator/master/scripts/install.sh | sh -s
+curl -sSfL https://github.com/stakewise/v3-operator/blob/v3.1.10/scripts/install.sh | sh -s
 ```
 
 The binary will be installed inside the \~/bin directory. Add the binary to your path:
@@ -117,7 +115,7 @@ export PATH=$PATH:~/bin
 If you want to install a specific version to a custom location, run:
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/stakewise/v3-operator/master/scripts/install.sh | sh -s -- -b <custom_location> vX.X.X
+curl -sSfL https://github.com/stakewise/v3-operator/blob/v3.1.10/scripts/install.sh | sh -s -- -b <custom_location> vX.X.X
 ```
 {% endtab %}
 
@@ -127,13 +125,13 @@ _In the context of running an Operator Service through Docker, it is crucial to 
 Pull the latest docker operator docker image:
 
 ```bash
-docker pull europe-west4-docker.pkg.dev/stakewiselabs/public/v3-operator:v3.1.5
+docker pull europe-west4-docker.pkg.dev/stakewiselabs/public/v3-operator:v3.1.10
 ```
 
 You can also build the docker image from source by cloning this repo and executing the following command from within the `v3-operator` folder:
 
 ```bash
-docker build --pull -t europe-west4-docker.pkg.dev/stakewiselabs/public/v3-operator:v3.1.5 .
+docker build --pull -t europe-west4-docker.pkg.dev/stakewiselabs/public/v3-operator:v3.1.10 .
 ```
 
 You will execute Operator Service commands using the format below (note the use of flags are optional):
@@ -142,7 +140,7 @@ You will execute Operator Service commands using the format below (note the use 
 docker run --rm -ti \
 -u $(id -u):$(id -g) \
 -v ~/.stakewise/:/data \
-europe-west4-docker.pkg.dev/stakewiselabs/public/v3-operator:v3.1.5 \
+europe-west4-docker.pkg.dev/stakewiselabs/public/v3-operator:v3.1.10 \
 src/main.py COMMAND \
 --data-dir=/data \
 --flagA=123 \
@@ -156,11 +154,11 @@ Build requirements:
 * [Python 3.10+](https://www.python.org/downloads/)
 * [Poetry](https://python-poetry.org/docs/)
 
-Clone this repo and install dependencies by executing the following command from within the `v3-operator` folder:
+Clone this repo and install dependencies by executing the following commands from within the `v3-operator` folder:
 
-```bash
-poetry install --only main
-```
+<pre class="language-bash"><code class="lang-bash"><strong>git checkout v3.1.10
+</strong><strong>poetry install --only main
+</strong></code></pre>
 
 You will execute Operator Service commands from within the `v3-operator` folder using the below format (note that the use of flags is optional):
 
